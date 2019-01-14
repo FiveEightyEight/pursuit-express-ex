@@ -1,8 +1,10 @@
 const express = require('express');
 
-const { logger, myBodyParser } = require('./middleware');
-const UserService = require('./services/user');
+const {authenticator, logger, myBodyParser } = require('./middleware');
+
 const {userApp} = require('./routes/user')
+const {todoApp} = require('./routes/todoitem')
+
 
 // initial app
 const app = express();
@@ -10,26 +12,18 @@ const app = express();
 // custom body parser middleware
 app.use(myBodyParser)
 app.use(logger)
+app.use(authenticator)
+
 
 // routes!
 app.use('/user', userApp);
+app.use('/todoitem', todoApp);
 
-// TODOLIST ITEMS
-app.post('/todoitem', (req, res) => {
-    res.json({})
-});
 
-app.get('/todoitem/:id', (req, res) => {
-    res.json({})
-});
-
-app.put('/todoitem/:id', (req, res) => {
-    res.json({})
-});
-
-app.delete('/todoitem/:id', (req, res) => {
-    res.json({})
-
+app.use((req, res) => {
+    res.status(404).json({
+        message: 'page not found',
+    })
 })
 
 

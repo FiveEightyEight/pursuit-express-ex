@@ -1,7 +1,7 @@
 {
   "name": "middleware",
   "version": "1.0.0",
-  "description": "",
+  "description": "Refactor `index.js` such that the `todoitem` routes are organized in the same way the `user` routes are organized.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,13 +9,22 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcrypt": "3.0.3",
+    "body-parser": "1.18.3",
     "express": "4.16.4",
     "node-persist": "3.0.2",
-    "body-parser": "1.18.3",
-    "bcrypt": "3.0.3",
-    "uuid": "3.3.2"
+    "uuid": "3.3.2",
+    "uuidv1": "^1.6.14"
   },
   "devDependencies": {
     "nodemon": "^1.18.9"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FiveEightyEight/pursuit-express-ex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FiveEightyEight/pursuit-express-ex/issues"
+  },
+  "homepage": "https://github.com/FiveEightyEight/pursuit-express-ex#readme"
 }

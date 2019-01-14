@@ -1,4 +1,8 @@
 const express = require('express');
+const bcrypt = require('bcrypt');
+const UserService = require('../services/user');
+// const {authenticator, logger, myBodyParser } = require('../middleware');
+const uuidv1 = require('uuidv1');
 const app = express.Router();
 
 // GET ALL USERS : ADMIN
@@ -11,6 +15,34 @@ app.get('/all', (req, res) => {
             res.status(404).json({ error: err.toString() })
         });
 })
+
+// CREATE USER
+app.post('/', (req, res) => {
+    const { username, email, location, password } = req.body;
+
+    bcrypt.hash(password, 10)
+        .then((encryptedPassword) => {
+            const newUser = {
+                username: username,
+                password: encryptedPassword,
+                email: email,
+                location: location,
+                updatedAt: new Date()
+            }
+
+            return UserService.createUser(username, newUser);
+        })
+        .then(response => {
+            res.json(response);
+        })
+        .catch(err => {
+            res.status(400).json({ error: 'Something went wrong' });
+        })
+});
+
+
+
+
 
 app.post('/login', (req, res) => {
     const { username, password } = req.body;
@@ -46,29 +78,8 @@ app.post('/login', (req, res) => {
 
 // curl -X POST http://localhost:3000/user -H "Content-Type: application/json" -d '{"username": "taqkarim", "email": "taqqui.karim@pursuit.org", "location": "nyc", "password": "foobar"}'
 
-// CREATE USER
-app.post('/', (req, res) => {
-    const { username, email, location, password } = req.body;
 
-    bcrypt.hash(password, 10)
-        .then((encryptedPassword) => {
-            const newUser = {
-                username: username,
-                password: encryptedPassword,
-                email: email,
-                location: location,
-                updatedAt: new Date()
-            }
 
-            return UserService.createUser(username, newUser);
-        })
-        .then(response => {
-            res.json(response);
-        })
-        .catch(err => {
-            res.status(400).json({ error: 'Something went wrong' });
-        })
-});
 
 // GET USER
 app.get('/:id', (req, res) => {
@@ -92,7 +103,7 @@ app.get('/:id', (req, res) => {
 // UPDATE USER
 app.put('/:id', (req, res) => {
     const { username, email, location, password } = req.body;
-
+    UserService.readUser(username)
     const newUser = {
         username: username,
         password: password,

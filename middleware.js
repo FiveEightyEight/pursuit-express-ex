@@ -60,7 +60,23 @@ __________________________________
 }
 
 
+
+const authenticator = (req, res, next) =>{
+    
+    const {token} = req.headers;
+    if(token) {
+        next()
+        return;
+    } else {
+        res.json({message: 'unauthorized user'});
+    }
+    
+
+};
+
+
 module.exports = {
     myBodyParser,
     logger,
+    authenticator,
 }

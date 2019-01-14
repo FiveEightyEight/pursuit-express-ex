@@ -1,0 +1,249 @@
+
+Request TYPE: POST
+Request URL: /todolistitem/
+ID: undefined
+Request PAYLOAD: {"foo":"Bar"}
+TIMESTAMP: 1547414522282
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todolistitem/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414540523
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todolistitem/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414559849
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todolist/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414601959
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todolist/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414682640
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todolist/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414717045
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todolist/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414865224
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todoitem/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414880703
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todoitem/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414942304
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /user/
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547414961707
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todoitem
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547415001616
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todoitem
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547415024524
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todoitem
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547415032189
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todoitem/fiveeightyeight
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547415069351
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /todoite
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547416299454
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547416316421
+__________________________________
+
+    
+Request TYPE: GET
+Request URL: /
+ID: undefined
+Request PAYLOAD: undefined
+TIMESTAMP: 1547416336102
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user
+ID: undefined
+Request PAYLOAD: {"username":"taqkarim","email":"taqqui.karim@pursuit.org","location":"nyc","password":"foobar"}
+TIMESTAMP: 1547417250957
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user
+ID: undefined
+Request PAYLOAD: {"username":"taqkarim","email":"taqqui.karim@pursuit.org","location":"nyc","password":"foobar"}
+TIMESTAMP: 1547417300282
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user
+ID: undefined
+Request PAYLOAD: {"username":"robert","email":"robertabreu@pursuit.org","location":"nyc","password":"pizza"}
+TIMESTAMP: 1547417658944
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547417964962
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547418209095
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547419802544
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547419855384
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547419938656
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547420086076
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547420108235
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547420123980
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547420214106
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547420302301
+__________________________________
+
+    
+Request TYPE: POST
+Request URL: /user/login
+ID: undefined
+Request PAYLOAD: {"username":"robert","password":"pizza"}
+TIMESTAMP: 1547420313809
+__________________________________
+
+    
